@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.makeshaadi">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MaterialTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="Replace with actual key" />
+
+        <service
+            android:name="com.makeshaadi.FCMService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.makeshaadi.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.makeshaadi.PolicyActivity"
+            android:parentActivityName="com.makeshaadi.MainActivity" />
+        <activity
+            android:name="com.makeshaadi.PlansActivity"
+            android:parentActivityName="com.makeshaadi.MainActivity" />
+        <activity android:name="com.makeshaadi.MeetupDetailActivity" />
+        <activity
+            android:name="com.makeshaadi.ScheduleMeetupActivity"
+            android:parentActivityName="com.makeshaadi.UserDetailActivity" />
+        <activity
+            android:name="com.makeshaadi.UserImagesActivity"
+            android:parentActivityName="com.makeshaadi.EditProfileActivity" />
+        <activity
+            android:name="com.makeshaadi.AboutActivity"
+            android:parentActivityName="com.makeshaadi.MainActivity" />
+        <activity
+            android:name="com.makeshaadi.EditProfileActivity"
+            android:parentActivityName="com.makeshaadi.MainActivity" />
+        <activity
+            android:name="com.makeshaadi.UserDetailActivity"
+            android:parentActivityName="com.makeshaadi.MainActivity" />
+        <activity
+            android:name="com.makeshaadi.ChatActivity"
+            android:parentActivityName="com.makeshaadi.MainActivity" />
+        <activity android:name="com.makeshaadi.WelcomeActivity" />
+        <activity android:name="com.makeshaadi.MainActivity" />
+    </application>
+
+</manifest>

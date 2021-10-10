@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.makeshaadi.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/shortlistFragment"
+        android:name="com.makeshaadi.InterestsFragment"
+        android:label="fragment_shortlist"
+        tools:layout="@layout/fragment_shortlist" />
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.makeshaadi.ChatListFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chatlist" />
+    <fragment
+        android:id="@+id/meetupFragment"
+        android:name="com.makeshaadi.MeetupFragment"
+        android:label="fragment_meetup"
+        tools:layout="@layout/fragment_meetup" />
+</navigation>

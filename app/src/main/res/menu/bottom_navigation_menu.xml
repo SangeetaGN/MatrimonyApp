@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:menuCategory="secondary"
+        android:title="Home" />
+    <item
+        android:id="@id/shortlistFragment"
+        android:icon="@drawable/ic_favorite"
+        android:menuCategory="secondary"
+        android:title="Interests" />
+    <item
+        android:id="@id/chatsFragment"
+        android:icon="@drawable/ic_chat"
+        android:menuCategory="secondary"
+        android:title="Chats" />
+    <item
+        android:id="@id/meetupFragment"
+        android:icon="@drawable/ic_people"
+        android:menuCategory="secondary"
+        android:title="Meetups" />
+</menu>

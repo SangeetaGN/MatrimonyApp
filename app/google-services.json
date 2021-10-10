@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887023992694",
+    "project_id": "matrimony-6665c",
+    "storage_bucket": "matrimony-6665c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887023992694:android:6df26d5bf149261e714457",
+        "android_client_info": {
+          "package_name": "com.makeshaadi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887023992694-96nug5b6r7i9sc617rgmrb9ro9bsg1mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXHBQK2i2nIGMCtpszl6s7PaasUn9iqho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887023992694-96nug5b6r7i9sc617rgmrb9ro9bsg1mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
